@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1004767731840",
+    "project_id": "twice-apps-60be0",
+    "storage_bucket": "twice-apps-60be0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004767731840:android:1b0b6fb0e2aa2eb0d48665",
+        "android_client_info": {
+          "package_name": "com.example.twiceapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004767731840-1f8aplr9k8mgustgknat7odtc1lub458.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMAQEAF8l_NDmnyDzyTbYX7d19mXWQ1qY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004767731840-1f8aplr9k8mgustgknat7odtc1lub458.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

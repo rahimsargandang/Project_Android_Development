@@ -123,9 +123,9 @@ public class Register_user extends AppCompatActivity implements View.OnClickList
                                 }
                             });
                         }else{
-                            Log.d("---->",""+task.getException());
-                            //Toast.makeText(Register_user.this, "Registration Failed!!!!! Try Again!", Toast.LENGTH_LONG).show();
-                            //progressBar.setVisibility(View.GONE);
+                            //Log.d("---->",""+task.getException());
+                            Toast.makeText(Register_user.this, "Registration Failed!!!!! Try Again!", Toast.LENGTH_LONG).show();
+                            progressBar.setVisibility(View.GONE);
                         }
 
                     }

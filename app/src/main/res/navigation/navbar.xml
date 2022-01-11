@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navbar"
+    app:startDestination="@id/homepage">
+
+    <fragment
+        android:id="@+id/mentaltest"
+        android:name="com.example.twiceapps.mentaltest"
+        android:label="mentaltest"
+        tools:layout="@layout/fragment_mentaltest" />
+    <fragment
+        android:id="@+id/hospital"
+        android:name="com.example.twiceapps.nearesthospital"
+        android:label="hospital"
+        tools:layout="@layout/fragment_nearesthospital" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.twiceapps.myprofile"
+        android:label="profile"
+        tools:layout="@layout/fragment_myprofile" />
+    <fragment
+        android:id="@+id/homepage"
+        android:name="com.example.twiceapps.home"
+        android:label="homepage"
+        tools:layout="@layout/fragment_home" />
+</navigation>

@@ -30,5 +30,6 @@ public class HomePage extends AppCompatActivity {
         NavigationUI.setupWithNavController(bottomNavigationView,navCo);
 
 
+
     }
 }

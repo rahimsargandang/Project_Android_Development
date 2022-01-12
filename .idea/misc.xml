@@ -5,7 +5,10 @@
       <map>
         <entry key="..\:/Users/User/Documents/AndroidStudioProjects/TwiceApps/app/src/main/res/drawable/ic_home.xml" value="0.2989583333333333" />
         <entry key="..\:/Users/User/Documents/AndroidStudioProjects/TwiceApps/app/src/main/res/layout/activity_forgot_password.xml" value="0.3484375" />
+        <entry key="..\:/Users/User/Documents/AndroidStudioProjects/TwiceApps/app/src/main/res/layout/activity_home_anxiety.xml" value="0.3625" />
+        <entry key="..\:/Users/User/Documents/AndroidStudioProjects/TwiceApps/app/src/main/res/layout/activity_home_depression.xml" value="0.3625" />
         <entry key="..\:/Users/User/Documents/AndroidStudioProjects/TwiceApps/app/src/main/res/layout/activity_home_page.xml" value="0.25" />
+        <entry key="..\:/Users/User/Documents/AndroidStudioProjects/TwiceApps/app/src/main/res/layout/activity_home_stress.xml" value="0.3484375" />
         <entry key="..\:/Users/User/Documents/AndroidStudioProjects/TwiceApps/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/User/Documents/AndroidStudioProjects/TwiceApps/app/src/main/res/layout/activity_register_user.xml" value="0.25" />
         <entry key="..\:/Users/User/Documents/AndroidStudioProjects/TwiceApps/app/src/main/res/layout/fragment_dashboard.xml" value="0.3625" />
@@ -14,6 +17,7 @@
         <entry key="..\:/Users/User/Documents/AndroidStudioProjects/TwiceApps/app/src/main/res/layout/fragment_myprofile.xml" value="0.2828125" />
         <entry key="..\:/Users/User/Documents/AndroidStudioProjects/TwiceApps/app/src/main/res/layout/fragment_nearesthospital.xml" value="0.2828125" />
         <entry key="..\:/Users/User/Documents/AndroidStudioProjects/TwiceApps/app/src/main/res/layout/fragment_notifications.xml" value="0.3625" />
+        <entry key="..\:/Users/User/Documents/AndroidStudioProjects/TwiceApps/app/src/main/res/layout/home_row.xml" value="0.3625" />
         <entry key="..\:/Users/User/Documents/AndroidStudioProjects/TwiceApps/app/src/main/res/menu/bottom_menu.xml" value="0.2828125" />
       </map>
     </option>

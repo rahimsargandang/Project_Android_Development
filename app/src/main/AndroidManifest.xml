@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TwiceApps">
         <activity
+            android:name=".home_depression"
+            android:exported="false" />
+        <activity
+            android:name=".home_anxiety"
+            android:exported="false" />
+        <activity
+            android:name=".home_stress"
+            android:exported="false" />
+        <activity
             android:name=".ForgotPassword"
             android:exported="false" />
         <activity

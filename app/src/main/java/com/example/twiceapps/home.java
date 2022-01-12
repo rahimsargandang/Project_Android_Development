@@ -3,10 +3,17 @@ package com.example.twiceapps;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.twiceapps.adapter.HomeRecyclerViewAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -55,10 +62,33 @@ public class home extends Fragment {
         }
     }
 
+    LinearLayoutManager linearLayoutManager;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View v = inflater.inflate(R.layout.fragment_home,container,false);
+
+        RecyclerView recyclerView = v.findViewById(R.id.recycler_view);
+
+        linearLayoutManager = new LinearLayoutManager(getActivity());
+        recyclerView.setLayoutManager(linearLayoutManager);
+
+        List<homerecycler> allHomeInfor = getAllHomeInfor();
+        HomeRecyclerViewAdapter homeRecyclerViewAdapter = new HomeRecyclerViewAdapter(getActivity(), allHomeInfor);
+        recyclerView.setAdapter(homeRecyclerViewAdapter);
+
+        return v;
     }
+
+    private List<homerecycler>getAllHomeInfor(){
+        List<homerecycler> allHome = new ArrayList<homerecycler>();
+
+        allHome.add(new homerecycler("Stress", R.drawable.stress));
+        allHome.add(new homerecycler("Anxiety", R.drawable.anxiety));
+        allHome.add(new homerecycler("Depression", R.drawable.depression));
+
+        return allHome;
+    }
+
 }

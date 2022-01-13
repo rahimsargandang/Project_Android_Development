@@ -4,17 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/teal_700"
     tools:context=".guide_anxiety">
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stress Anxiety"
+        android:text=" Guide How to Handle Anxiety"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.212" />
+        app:layout_constraintVertical_bias="0.042" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="monospace"
+        android:lineSpacingExtra="10sp"
+        android:text="Simple strategies, such as relaxation techniques and regular exercise, are effective in reducing anxiety and contributing to emotional well-being. Psychotherapy can help and is sometimes used together with medication to reduce and eliminate signs and symptoms."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="monospace"
+        android:text="Breathing Exercise Video for Anxiety   "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.492" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+        <VideoView
+            android:id="@+id/vid_stress"
+            android:layout_width="384dp"
+            android:layout_height="225dp" />
+    </FrameLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

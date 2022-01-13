@@ -4,17 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/teal_700"
     tools:context=".guide_depression">
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="monospace"
+        android:text="People With Depression Share Advice Video"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="monospace"
+        android:lineSpacingExtra="10sp"
+        android:text="Talk therapy with a trained counsellor or psychotherapist, exercise and support groups are among the options available. Antidepressants are also sometimes prescribed, but they should not be used for treating children, and should not be the first line of treatment for adolescents. All treatment should involve identifying stress factors and sources of support, and individuals should maintain social networks and activities. "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Depression Guide"
+        android:text=" Guide How to Handle Depression"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.212" />
+        app:layout_constraintVertical_bias="0.042" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27">
+
+        <VideoView
+            android:id="@+id/vid_stress"
+            android:layout_width="384dp"
+            android:layout_height="225dp" />
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

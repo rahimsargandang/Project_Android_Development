@@ -145,7 +145,7 @@
 
                 <TextView
                     android:id="@+id/textView22"
-                    android:layout_width="71dp"
+                    android:layout_width="140dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Irregular Heartbeat"
@@ -157,7 +157,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:text="Sweaty or cold hands"
+                    android:textAlignment="center"
+                    android:textColor="#F8F4F4" />
             </LinearLayout>
 
             <LinearLayout
@@ -167,17 +169,21 @@
 
                 <TextView
                     android:id="@+id/textView24"
-                    android:layout_width="wrap_content"
+                    android:layout_width="105dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:text="Numbness in the hands"
+                    android:textAlignment="center"
+                    android:textColor="#FAF9F9" />
 
                 <TextView
                     android:id="@+id/textView25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:text="Unable to calm"
+                    android:textAlignment="center"
+                    android:textColor="#F6F2F2" />
             </LinearLayout>
 
         </LinearLayout>

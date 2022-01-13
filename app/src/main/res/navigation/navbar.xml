@@ -25,4 +25,9 @@
         android:name="com.example.twiceapps.home"
         android:label="homepage"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/hospitalmap"
+        android:name="com.example.twiceapps.hospitalmap"
+        android:label="fragment_hospitalmap"
+        tools:layout="@layout/fragment_hospitalmap" />
 </navigation>

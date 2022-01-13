@@ -3,10 +3,17 @@ package com.example.twiceapps;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.twiceapps.adapter.GuideRecyclerViewAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -55,10 +62,34 @@ public class mentaltest extends Fragment {
         }
     }
 
+    LinearLayoutManager linearLayoutManager;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View v = inflater.inflate(R.layout.fragment_mentaltest,container,false);
+
+        RecyclerView recyclerView = v.findViewById(R.id.recycler_view);
+
+        linearLayoutManager = new LinearLayoutManager(getActivity());
+        recyclerView.setLayoutManager(linearLayoutManager);
+
+        List<Guide> allGuideInfor = getAllGuideInfor();
+        GuideRecyclerViewAdapter guideRecyclerViewAdapter = new GuideRecyclerViewAdapter(getActivity(),allGuideInfor);
+        recyclerView.setAdapter(guideRecyclerViewAdapter);
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mentaltest, container, false);
+        return v;
     }
+
+    private List<Guide> getAllGuideInfor(){
+        List<Guide> allGuide = new ArrayList<Guide>();
+
+        allGuide.add(new Guide("Stress", R.drawable.guide_stress));
+        allGuide.add(new Guide("Anxiety", R.drawable.guide_anxiety));
+        allGuide.add(new Guide("Depression", R.drawable.guide_depression));
+
+        return allGuide;
+    }
+
 }

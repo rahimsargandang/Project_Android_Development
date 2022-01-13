@@ -21,8 +21,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="598dp"
+        android:layout_width="359dp"
+        android:layout_height="634dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/teal_700"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,6 +48,7 @@
                 android:layout_height="wrap_content"
                 android:text="Anxiety is a common emotion when dealing with daily stresses and problems. But when these emotions are persistent, excessive and irrational, and affect a person’s ability to function, anxiety becomes a disorder. There are different types of anxiety disorders, including phobias, panic and stress disorders, and obsessive compulsive disorder. "
                 android:textAlignment="center"
+                android:textAllCaps="false"
                 android:textColor="#FAFAFA"
                 android:textSize="16sp" />
 
@@ -135,6 +136,48 @@
                     android:text="Nausea"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="71dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Irregular Heartbeat"
+                    android:textAlignment="center"
+                    android:textColor="#FFFCFC" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView" />
             </LinearLayout>
 
         </LinearLayout>

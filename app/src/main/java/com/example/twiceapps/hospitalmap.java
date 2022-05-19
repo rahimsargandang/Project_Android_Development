@@ -152,7 +152,7 @@ public class hospitalmap extends Fragment implements OnMapReadyCallback,
         googlePlacesUrl.append("&radius=" + PROXIMITY_RADIUS);
         googlePlacesUrl.append("&type=" + nearbyPlace);
         googlePlacesUrl.append("&sensor=true");
-        googlePlacesUrl.append("&key=" + "AIzaSyC0gDbzE9s-2fgO4FaQYlkHzTE0-IfpXLA");
+        googlePlacesUrl.append("&key=" + "APIKEY");
         Log.d("getUrl", googlePlacesUrl.toString());
         return (googlePlacesUrl.toString());
     }
